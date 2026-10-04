@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Jukoke news</title>
+<link href="https://jukeboxoke.com/news.html"/>
+<link rel="self" href="https://jukeboxoke.com/feed.xml"/>
+<id>https://jukeboxoke.com/</id>
+<updated>2026-10-03T00:00:00Z</updated>
+<entry>
+<title>Welcome to the Jukoke website</title>
+<link href="https://jukeboxoke.com/news.html#welcome"/>
+<id>https://jukeboxoke.com/news.html#welcome</id>
+<updated>2026-10-03T00:00:00Z</updated>
+<summary>This is the new home for Jukoke: downloads, release notes and support all live here.</summary>
+</entry>
+</feed>
