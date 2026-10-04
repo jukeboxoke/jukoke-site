@@ -1,7 +1,7 @@
 // The ONLY file to edit for a new release or a changed link.
 // Everything on the Download and Support pages is filled in from here.
 window.JUKOKE = {
-  githubOwner: "jukeboxoke",                // owner of the public releases repo
+  githubOwner: "YOUR-GITHUB-USERNAME",      // owner of the public releases repo
   releasesRepo: "jukoke-releases",          // public repo that holds the installers
   winAsset: "Jukoke-Setup.exe",             // file name attached to every release (keep it identical)
   debAsset: "Jukoke-Ubuntu.deb",            // ditto
