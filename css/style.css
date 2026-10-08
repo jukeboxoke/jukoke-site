@@ -121,6 +121,22 @@ details p{margin-bottom:14px}
 .ladder p{margin:0;font-size:.95rem}
 .badge{display:inline-block;background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:1px 8px;font-size:.75rem;font-weight:800;margin-left:6px;vertical-align:middle}
 .quote{border-left:4px solid var(--accent);padding:4px 0 4px 16px;font-size:1.1rem;color:var(--muted);margin:18px 0}
+
+.diagram{margin:24px 0 8px}
+.diagram-scroll{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:var(--shadow)}
+.diagram svg{display:block;width:100%;min-width:720px;height:auto}
+.diagram figcaption{margin-top:10px}
+.dg-group{fill:rgba(255,255,255,.04);stroke:var(--line);stroke-dasharray:4 4}
+.dg-box{fill:rgba(255,255,255,.10);stroke:var(--line);stroke-width:1.5}
+.dg-box.hot{stroke:var(--brand)}
+.dg-box.game{stroke:var(--accent);fill:rgba(255,138,101,.12)}
+.dg-label{fill:var(--accent);font:700 13px system-ui,sans-serif;letter-spacing:.08em}
+.dg-name{fill:var(--ink);font:800 15px system-ui,sans-serif}
+.dg-sub{fill:var(--muted);font:13px system-ui,sans-serif}
+.dg-line{fill:none;stroke:var(--brand);stroke-width:2}
+.dg-line.thick{stroke:var(--accent);stroke-width:3}
+.dg-line.dash{stroke-dasharray:5 4;stroke:var(--accent)}
+.dg-arrow{fill:var(--brand)}
 @media (max-width:820px){
   .compare,.ladder{grid-template-columns:1fr}
   .ladder li{margin-top:0!important}
