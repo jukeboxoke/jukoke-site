@@ -5,7 +5,7 @@ window.JUKOKE = {
   releasesRepo: "jukoke-releases",          // public repo that holds the installers
   winAsset: "Jukoke-Setup.exe",             // file name attached to every release (keep it identical)
   debAsset: "Jukoke-Ubuntu.deb",            // ditto
-  version: "2026.10.09-001",
+  version: "2026.10.10-001",
   released: "October 2026",
   winSize: "550 MB",
   debSize: "TBD",
