@@ -2,6 +2,7 @@
   var C = window.JUKOKE || {};
   var base = "https://github.com/" + C.githubOwner + "/" + C.releasesRepo;
   C.releasesUrl = base + "/releases";
+  C.resolverUrl = "https://github.com/" + C.resolverOwner + "/" + C.resolverRepo + "/releases/latest";
   var dl = {
     win: base + "/releases/latest/download/" + C.winAsset,
     deb: base + "/releases/latest/download/" + C.debAsset
@@ -16,5 +17,6 @@
     var v = C[a.getAttribute("data-cfg-href")];
     if (v) a.href = v;
   });
+  each("[data-resolver]", function (a) { a.href = C.resolverUrl; });
   each("[data-year]", function (el) { el.textContent = new Date().getFullYear(); });
 })();
