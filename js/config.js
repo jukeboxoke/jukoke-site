@@ -13,5 +13,6 @@ window.JUKOKE = {
   debSize: "TBD",
   winSha: "PASTE-SHA256-HERE",
   debSha: "PASTE-SHA256-HERE",
+  analyticsId: "dc5cd492-6689-41ce-915e-98ce07a0e882",
   feedbackUrl: "PASTE-FEEDBACK-FORM-URL-HERE"
 };
