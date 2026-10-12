@@ -1,7 +1,7 @@
 // The ONLY file to edit for a new release or a changed link.
 // Everything on the Download and Support pages is filled in from here.
 window.JUKOKE = {
-  githubOwner: "YOUR-GITHUB-USERNAME",      // owner of the public releases repo
+  githubOwner: "jukeboxoke",                // owner of the public releases repo
   releasesRepo: "jukoke-releases",          // public repo that holds the installers
   resolverOwner: "CASpirit1969",            // owner of the separate sample-resolver repo
   resolverRepo: "sample-resolver",          // example resolver, provided as is
