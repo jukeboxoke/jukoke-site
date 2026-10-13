@@ -2,7 +2,6 @@
   var C = window.JUKOKE || {};
   var base = "https://github.com/" + C.githubOwner + "/" + C.releasesRepo;
   C.releasesUrl = base + "/releases";
-  C.resolverUrl = "https://github.com/" + C.resolverOwner + "/" + C.resolverRepo + "/releases/latest";
   var dl = {
     win: base + "/releases/latest/download/" + C.winAsset,
     deb: base + "/releases/latest/download/" + C.debAsset
@@ -13,23 +12,15 @@
     var v = C[el.getAttribute("data-cfg")];
     if (v) el.textContent = v;
   });
+  // A link setting that is still a placeholder (or blank) used to become a relative URL and land on the 404 page.
+  // Only a real http(s) address is used; otherwise the link falls back to e-mail, which always works.
   each("[data-cfg-href]", function (a) {
     var v = C[a.getAttribute("data-cfg-href")];
-    if (v) a.href = v;
+    if (/^https?:\/\//i.test(v || "")) { a.href = v; }
+    else {
+      a.href = "mailto:support@jukeboxoke.com?subject=Jukoke%20feedback";
+      a.textContent = "Email your feedback";
+    }
   });
-  each("[data-resolver]", function (a) { a.href = C.resolverUrl; });
-  // Optional cookieless analytics (Umami). Does nothing until analyticsId
-  // (the Umami "website ID") is set in config.js. Download buttons are
-  // tagged so each click is counted as an event.
-  if (C.analyticsId && !/^(localhost|127\.)/.test(location.hostname)) {
-    each("[data-dl]", function (a) {
-      a.setAttribute("data-umami-event", "download-" + a.getAttribute("data-dl"));
-    });
-    var b = document.createElement("script");
-    b.defer = true;
-    b.src = "https://cloud.umami.is/script.js";
-    b.setAttribute("data-website-id", C.analyticsId);
-    document.head.appendChild(b);
-  }
   each("[data-year]", function (el) { el.textContent = new Date().getFullYear(); });
 })();
