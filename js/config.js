@@ -11,8 +11,8 @@ window.JUKOKE = {
   released: "October 2026",
   winSize: "167 MB",
   debSize: "114 MB",
-  winSha: "8008d0bbf1b4bbfdbc872f1c1c2fefacadf3f9fd5fd941b55a9a49f9fea9313b",
-  debSha: "d63b40fef79f9fcd396b7d12eab59a43a987df12f708f22ebbd1e4f7ea668057",
+  winSha: "cd901be895c09f00e7b9914635db9e3d981e4ab5aa0dbdfc2a7508c14364f443",
+  debSha: "9af37adc35a417aab57222bda18405e7744bf4a579ae7030ba71acd1805ef27e",
   analyticsId: "dc5cd492-6689-41ce-915e-98ce07a0e882",
   feedbackUrl: "PASTE-FEEDBACK-FORM-URL-HERE"
 };
