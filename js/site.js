@@ -22,5 +22,11 @@
       a.textContent = "Email your feedback";
     }
   });
+  // The sample helper (resolver) link, set by resolverOwner and resolverRepo in config.js. Without both, the whole sentence stays hidden.
+  var rOwner = /^[\w.-]+$/.test(C.resolverOwner || "") ? C.resolverOwner : "";
+  var rRepo = /^[\w.-]+$/.test(C.resolverRepo || "") ? C.resolverRepo : "";
+  C.resolverUrl = rOwner && rRepo && !/^YOUR-/.test(rOwner) ? "https://github.com/" + rOwner + "/" + rRepo + "/releases/latest" : "";
+  each("[data-resolver-wrap]", function (w) { if (C.resolverUrl) { w.hidden = false; } });
+  each("[data-resolver]", function (a) { if (C.resolverUrl) { a.href = C.resolverUrl; } });
   each("[data-year]", function (el) { el.textContent = new Date().getFullYear(); });
 })();
