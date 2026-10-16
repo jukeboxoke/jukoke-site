@@ -7,7 +7,7 @@ window.JUKOKE = {
   resolverRepo: "sample-resolver",          // example resolver, provided as is
   winAsset: "Jukoke-Setup.exe",             // file name attached to every release (keep it identical)
   debAsset: "Jukoke-Ubuntu.deb",            // ditto
-  version: "2026.10.10-002",
+  version: "2026.10.15-001",
   released: "October 2026",
   winSize: "167 MB",
   debSize: "61 MB",
