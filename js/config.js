@@ -7,12 +7,12 @@ window.JUKOKE = {
   resolverRepo: "sample-resolver",          // example resolver, provided as is
   winAsset: "Jukoke-Setup.exe",             // file name attached to every release (keep it identical)
   debAsset: "Jukoke-Ubuntu.deb",            // ditto
-  version: "2026.10.17-001",
+  version: "2026.10.17-002",
   released: "October 2026",
   winSize: "226 MB",
   debSize: "62 MB",
-  winSha: "6432d1865415ec3248eb42f968dcd60dc3a4b01ec9d56a7dd5de973f90c06359",
-  debSha: "e65f37fb60513adfd070a05cc6db309d16c921efaac61aee206a980b643e14f8",
+  winSha: "36e3bc23f470ab7e250808c178525f957a17abd934f2ac0f25d0fb66f1c0c141",
+  debSha: "c49cf37f00f9465361bc629b8eb5d2c5d17fed021ff92ba5edb9d46c03b63e39",
   analyticsId: "dc5cd492-6689-41ce-915e-98ce07a0e882",
   feedbackUrl: "PASTE-FEEDBACK-FORM-URL-HERE"
 };
