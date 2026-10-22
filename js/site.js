@@ -12,16 +12,38 @@
     var v = C[el.getAttribute("data-cfg")];
     if (v) el.textContent = v;
   });
-  // A link setting that is still a placeholder (or blank) used to become a relative URL and land on the 404 page.
-  // Only a real http(s) address is used; otherwise the link falls back to e-mail, which always works.
-  each("[data-cfg-href]", function (a) {
-    var v = C[a.getAttribute("data-cfg-href")];
-    if (/^https?:\/\//i.test(v || "")) { a.href = v; }
-    else {
-      a.href = "mailto:support@jukeboxoke.com?subject=Jukoke%20feedback";
-      a.textContent = "Email your feedback";
-    }
-  });
+  // Feedback form (support page). With a real Web3Forms key the message is sent to support by that service;
+  // without one, the form opens the visitor's mail app with the message filled in, so it always works.
+  var form = document.getElementById("fb-form");
+  if (form) {
+    var st = document.getElementById("fb-status"), btn = document.getElementById("fb-send");
+    var say = function (t, cls) { st.textContent = t; st.className = "small " + (cls || ""); };
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var f = form.elements, email = f.email.value.trim(), msg = f.message.value.trim(), topic = f.topic.value;
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { say("Please enter a valid email address.", "fb-err"); f.email.focus(); return; }
+      if (!msg) { say("Please write a message.", "fb-err"); f.message.focus(); return; }
+      if (f.botcheck.checked) { return; }
+      var subject = "Jukoke feedback: " + topic;
+      var body = msg + "\n\nFrom: " + email + "\nPage: " + location.href;
+      if (!/^[0-9a-f-]{20,}$/i.test(C.formKey || "")) {
+        location.href = "mailto:support@jukeboxoke.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        say("Opening your email app\u2026");
+        return;
+      }
+      btn.disabled = true; say("Sending\u2026");
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ access_key: C.formKey, subject: subject, from_name: "Jukoke website", email: email, topic: topic, message: msg, page: location.href, botcheck: "" })
+      }).then(function (r) { return r.json(); }).then(function (j) {
+        if (j && j.success) { form.reset(); say("Thank you. Your message was sent.", "fb-ok"); }
+        else { throw new Error("rejected"); }
+      }).catch(function () {
+        say("Couldn\u2019t send. Please email support@jukeboxoke.com instead.", "fb-err");
+      }).then(function () { btn.disabled = false; });
+    });
+  }
   // The sample helper (resolver) link, set by resolverOwner and resolverRepo in config.js. Without both, the whole sentence stays hidden.
   var rOwner = /^[\w.-]+$/.test(C.resolverOwner || "") ? C.resolverOwner : "";
   var rRepo = /^[\w.-]+$/.test(C.resolverRepo || "") ? C.resolverRepo : "";

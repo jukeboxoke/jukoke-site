@@ -23,7 +23,7 @@
 <header class="site-header">
 <div class="wrap bar">
 <a class="brand" href="index.html" aria-label="Jukoke home"><img src="img/icon-192.png" alt="" width="36" height="36"><span>Jukoke</span></a>
-<nav aria-label="Main"><a href="index.html">Home</a><a href="features.html">Features</a><a href="download.html">Download</a><a href="news.html">News</a><a href="support.html" aria-current="page">Support</a></nav>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="download.html">Download</a><a href="news.html">News</a><a href="support.html" aria-current="page">Support</a></nav>
 </div>
 </header>
 <main id="main">
@@ -37,8 +37,29 @@
 <div class="cards three">
 <article class="card"><h3>Report a problem</h3><p>In Jukoke, open <strong>About</strong> and tap <strong>Report an Issue</strong>. It sends a report straight to support with the details we need.</p></article>
 <article class="card"><h3>Email us</h3><p><a href="mailto:support@jukeboxoke.com">support@jukeboxoke.com</a><br><span class="small muted">Tell us your version number (shown in About) and what you were doing.</span></p></article>
-<article class="card"><h3>Send feedback</h3><p><a href="#" data-cfg-href="feedbackUrl" rel="noopener">Open the feedback form</a><br><span class="small muted">Ideas, wishes, and what you&rsquo;d change.</span></p></article>
+<article class="card"><h3>Send feedback</h3><p><a href="#feedback">Use the form below</a><br><span class="small muted">Ideas, wishes, and what you&rsquo;d change.</span></p></article>
 </div>
+</section>
+
+<section class="wrap block" id="feedback">
+<h2>Send us a message</h2>
+<form class="card fb-form" id="fb-form" novalidate>
+<label for="fb-email">Your email</label>
+<input id="fb-email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="you@example.com">
+<label for="fb-topic">Topic</label>
+<select id="fb-topic" name="topic">
+<option>Idea or wish</option>
+<option>Something isn&rsquo;t working</option>
+<option>Question</option>
+<option>Tokens or billing</option>
+<option>Other</option>
+</select>
+<label for="fb-msg">Message</label>
+<textarea id="fb-msg" name="message" rows="7" required maxlength="5000" placeholder="If something isn&rsquo;t working, include your version number (shown in About) and what you were doing."></textarea>
+<input type="checkbox" name="botcheck" class="fb-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="fb-row"><button class="btn" type="submit" id="fb-send">Send</button><span id="fb-status" class="small" role="status" aria-live="polite"></span></div>
+<p class="small muted">We use your email only to reply. See the <a href="privacy.html">privacy policy</a>.</p>
+</form>
 </section>
 
 <section class="wrap block" id="faq">
