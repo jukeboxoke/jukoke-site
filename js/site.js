@@ -12,6 +12,12 @@
     var v = C[el.getAttribute("data-cfg")];
     if (v) el.textContent = v;
   });
+  // Links set from config.js (data-cfg-href="releasesUrl" and so on). Only a real http(s) address is used, so a
+  // placeholder never becomes a relative URL that lands on the 404 page.
+  each("[data-cfg-href]", function (a) {
+    var v = C[a.getAttribute("data-cfg-href")];
+    if (/^https?:\/\//i.test(v || "")) { a.href = v; }
+  });
   // Feedback form (support page). With a real Web3Forms key the message is sent to support by that service;
   // without one, the form opens the visitor's mail app with the message filled in, so it always works.
   var form = document.getElementById("fb-form");
