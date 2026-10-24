@@ -8,7 +8,7 @@ window.JUKOKE = {
   winAsset: "Jukoke-Setup.exe",             // file name attached to every release (keep it identical)
   debAsset: "Jukoke-Ubuntu.deb",            // ditto
   pricesUpdated: "October 2026",            // shown on the Pricing page
-  version: "2026.10.22-001",
+  version: "2026.10.23-001",
   released: "October 2026",
   winSize: "226 MB",
   debSize: "63 MB",
