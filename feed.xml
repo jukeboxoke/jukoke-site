@@ -6,7 +6,14 @@
 <link rel="alternate" type="text/html" href="https://jukeboxoke.com/news.html"/>
 <link rel="self" type="application/atom+xml" href="https://jukeboxoke.com/feed.xml"/>
 <id>https://jukeboxoke.com/</id>
-<updated>2026-10-25T12:00:00Z</updated>
+<updated>2026-10-28T12:00:00Z</updated>
+<entry>
+<title>An equalizer for the backing track</title>
+<link href="https://jukeboxoke.com/news.html#r20261028"/>
+<id>https://jukeboxoke.com/news.html#r20261028</id>
+<updated>2026-10-28T12:00:00Z</updated>
+<summary>Version 2026.10.28-001: an equalizer for Lite and Pro with presets, a Default and a curve for each song; previews kept between sessions with a size limit; finer volume steps; and a rebuild for video files that will not open.</summary>
+</entry>
 <entry>
 <title>Test your screen, sound and songs before the party</title>
 <link href="https://jukeboxoke.com/news.html#r20261025"/>
