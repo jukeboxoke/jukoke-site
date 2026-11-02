@@ -23,6 +23,8 @@ EXPECT = {                                                       # file -> regex
         r"Pro</th><td>10</td>",
         r"<strong>\$35</strong> for 30 days",
         r"30-day free trial",
+        r"loop, tempo and catalog editing",                  # part of Free (2026-11-01)
+        r"trial (pauses|waits) while a",                     # the Pro Pass pauses the free trial
     ],
     "features.html": [
         r'<th scope="col">Free</th><th scope="col">Lite</th><th scope="col">Pro</th>',      # three plan columns, no more
