@@ -26,6 +26,9 @@ EXPECT = {                                                       # file -> regex
     ],
     "features.html": [
         r'<th scope="col">Free</th><th scope="col">Lite</th><th scope="col">Pro</th>',      # three plan columns, no more
+        r'Loop, tempo and catalog editing</th><td>&#10003;</td><td>&#10003;</td><td>&#10003;</td>',   # free in every plan (2026-11-01)
+        r'Vocal removal and playlists</th><td>&ndash;</td><td>&#10003;</td><td>&#10003;</td>',        # still Lite and Pro
+        r'<th scope="row">Songs waiting in the queue</th><td>1</td><td>Unlimited</td><td>Unlimited</td>',
     ],
 }
 NAV = ["index.html", "features.html", "pricing.html", "download.html", "news.html", "support.html"]
