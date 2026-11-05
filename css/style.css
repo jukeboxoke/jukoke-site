@@ -179,3 +179,55 @@ nav a{padding:8px 6px;font-size:.92rem;white-space:nowrap}
 .fb-row{display:flex;align-items:center;gap:16px;margin:18px 0 10px;min-height:48px}
 .fb-form .fb-row #fb-status{min-height:1.4em}
 .fb-ok{color:#9be7b0}.fb-err{color:#ffb4a2}
+
+/* Song wish list form (wish.html): compact, so the whole form fits one screen on a phone or a laptop */
+.wl-row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.fb-form .wl-row2>label{margin:0}
+.wl-np{grid-template-columns:2fr 1fr;margin-top:12px}
+.wl-kn{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)}
+@media (max-width:520px){.wl-row2:not(.wl-np):not(.wl-kn){grid-template-columns:1fr}}
+.wl-hint{margin:6px 0 0}
+.wl-song{position:relative;border:1px solid var(--line);border-radius:12px;padding:6px 12px 12px;margin:10px 0 0;background:var(--band)}
+.wl-song legend{font-weight:800;padding:0 6px;color:var(--brand)}
+.wl-del{position:absolute;top:-14px;right:10px;background:var(--card);color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:2px 10px;font:inherit;font-size:.85rem;cursor:pointer}
+.wl-actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 4px}
+.wl-actions .btn{cursor:pointer;font:inherit;font-weight:700;padding:9px 18px}
+.wl-actions .btn:disabled{opacity:.5;cursor:default}
+.wl-check{display:flex!important;align-items:center;gap:10px;font-weight:400!important;margin-top:10px!important}
+.wl-check input{width:auto!important}
+.wl-check[hidden],#wl-party-row[hidden]{display:none!important}
+.wl-peek{margin:10px 0 0;padding:0 14px}
+.wl-peek summary{padding:8px 0}
+.fb-form textarea.wl-preview{min-height:110px;margin:0 0 12px;font:.85rem/1.4 ui-monospace,Menlo,Consolas,monospace}
+.wl-status-row{margin:6px 0 4px;min-height:1.4em}
+.wl-clear-row{margin:6px 0 0}
+.wl-clear{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.wl-head{padding-top:24px}
+.wl-head h1{margin-bottom:.2em}
+.wl-head .lead{font-size:1.05rem;margin:0}
+.wl-body{padding-top:16px;padding-bottom:28px}
+.fb-form .wl-party{display:grid!important;grid-template-columns:auto 1fr;align-items:center;gap:10px;margin:0 0 12px}
+.fb-form .wl-party[hidden]{display:none!important}
+.wl-form{padding:16px 18px}
+.wl-form input,.wl-form select,.wl-form textarea{padding:7px 10px;border-radius:8px;font-size:.95rem}
+.wl-form label{font-size:.88rem;margin:10px 0 3px}
+.wl-form .wl-row2>label{margin:0}
+.wl-form .wl-row2>label>input,.wl-form .wl-row2>label>select{margin-top:3px}
+.wl-song{padding:2px 10px 10px;margin-top:12px}
+.wl-song .wl-row2{margin-top:6px}
+.wl-actions .btn{padding:7px 16px}
+.wl-actions .wl-clear{margin-left:auto}
+.wl-priv{font-size:.8rem;margin:6px 0 0}
+.wl-hint{font-size:.82rem;margin:4px 0 0}
+.wl-peek{margin-top:8px}.wl-peek summary{padding:6px 0;font-size:.92rem}
+.wl-check{font-size:.9rem!important;margin-top:8px!important}
+.wl-status-row{margin:2px 0}
+.wl-form .wl-party{margin:0 0 8px}
+.wl-form .wl-lbl{display:block;font-weight:700;font-size:.88rem}
+.wl-key{display:flex;align-items:center;gap:6px;margin-top:3px}
+.wl-key button{width:38px;height:38px;flex:none;border-radius:8px;border:1px solid var(--line);background:rgba(255,255,255,.10);color:var(--ink);font:inherit;font-size:1.25rem;font-weight:800;line-height:1;cursor:pointer;padding:0}
+.wl-key button:disabled{opacity:.35;cursor:default}
+.wl-key output{flex:1;min-width:0;text-align:center;font-weight:700;font-size:.95rem}
+.wl-kn{grid-template-columns:152px minmax(0,1fr)}
+.wl-key button{width:36px}
+.wl-key output{font-size:.9rem}

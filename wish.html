@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Song wish list – Jukoke</title>
+<meta name="description" content="Make a song wish list for your karaoke host. Fill in your stage name and songs, then send the list to your host in your own messaging app. Nothing is stored.">
+<link rel="canonical" href="https://jukeboxoke.com/wish.html">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:title" content="Song wish list – Jukoke">
+<meta property="og:description" content="Make a song wish list for your karaoke host. Nothing is stored.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jukeboxoke.com/img/logo.png">
+<meta property="og:url" content="https://jukeboxoke.com/wish.html">
+<meta name="color-scheme" content="dark">
+<link rel="alternate" type="application/atom+xml" title="Jukoke news" href="feed.xml">
+<meta name="application-name" content="Jukoke">
+<meta property="og:site_name" content="Jukoke">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap bar">
+<a class="brand" href="index.html" aria-label="Jukoke home"><img src="img/icon-192.png" alt="" width="36" height="36"><span>Jukoke&trade;</span></a>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="download.html">Download</a><a href="news.html">News</a><a href="support.html">Support</a></nav>
+</div>
+</header>
+<main id="main">
+
+<section class="wrap block page-head wl-head">
+<h1>Song wish list</h1>
+<p class="lead narrow">Tell your host what you would like to sing<span id="wl-host"></span>. Fill this in and send it from your own phone.</p>
+</section>
+
+<section class="wrap block wl-body">
+<noscript><p class="note">This form needs JavaScript. You can also just text your host your stage name and songs.</p></noscript>
+<form class="card fb-form wl-form" id="wl-form" novalidate>
+<label class="wl-party" id="wl-party-row" hidden>Party<input id="wl-party" type="text" readonly></label>
+<div class="wl-row2 wl-np">
+<label>Your stage name<input id="wl-name" type="text" maxlength="40" autocomplete="off" required placeholder="As used at the party"></label>
+<label>PIN (optional)<input id="wl-pin" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="4 digits"></label>
+</div>
+<p class="small muted wl-hint">Been to this host&rsquo;s party before? Use the same PIN so your past songs are found. New? Leave it empty.</p>
+
+<div id="wl-songs"></div>
+<div class="wl-actions"><button class="btn ghost" type="button" id="wl-add">Add another song</button></div>
+
+<label for="wl-note">Anything else for the host (optional)</label>
+<input id="wl-note" type="text" maxlength="200" autocomplete="off" placeholder="Late in the night, please">
+
+<label class="wl-check" id="wl-device-row"><input type="checkbox" id="wl-send-device" checked> <span>Tell the host which phone I am using (<span id="wl-device-text"></span>)</span></label>
+
+<details class="wl-peek" id="wl-details"><summary>See exactly what your host will get</summary>
+<textarea id="wl-preview" class="wl-preview" rows="6" readonly aria-label="The message your host will get"></textarea>
+</details>
+
+<div class="wl-actions">
+<button class="btn" type="button" id="wl-share" hidden>Send&hellip;</button>
+<button class="btn" type="button" id="wl-sms">Text message</button>
+<button class="btn ghost" type="button" id="wl-mail">Email</button>
+<button class="btn ghost" type="button" id="wl-copy">Copy</button>
+<button class="wl-clear" type="button" id="wl-clear">Clear form</button>
+</div>
+<div class="fb-row wl-status-row"><span id="wl-status" class="small" role="status" aria-live="polite"></span></div>
+<p class="small muted wl-priv">Your list goes only to the person you send it to. This page does not send it anywhere, and we do not keep a copy. Your PIN is a party code, not a password: do not use one you use anywhere else.</p>
+</form>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p class="foot-tag"><strong>Jukoke</strong>&trade; &mdash; Karaoke, the Nice way!&trade;<br>A <a href="https://jukeboxoke.com/">Jukeboxoke</a> product</p>
+<p class="foot-links"><a href="features.html">Features</a> <a href="download.html">Download</a> <a href="news.html">News</a> <a href="support.html">Support</a> <a href="wifi-setup.html">Venue internet</a> <a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a> <a href="refunds.html">Refunds</a></p>
+<p class="foot-small">&copy; <span data-year>2026</span> Matthew Wong. Jukoke&trade;, NICE-*&trade; and Karaoke, the Nice way&trade; are trademarks of Matthew Wong. All other trademarks belong to their owners.</p>
+</div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/wish.js"></script>
+</body>
+</html>
