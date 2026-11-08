@@ -6,7 +6,14 @@
 <link rel="alternate" type="text/html" href="https://jukeboxoke.com/news.html"/>
 <link rel="self" type="application/atom+xml" href="https://jukeboxoke.com/feed.xml"/>
 <id>https://jukeboxoke.com/</id>
-<updated>2026-10-28T12:00:00Z</updated>
+<updated>2026-11-08T12:00:00Z</updated>
+<entry>
+<title>Tidier folders and a calmer Wallet</title>
+<link href="https://jukeboxoke.com/news.html#r20261108"/>
+<id>https://jukeboxoke.com/news.html#r20261108</id>
+<updated>2026-11-08T12:00:00Z</updated>
+<summary>Version 2026.11.08-001: a scrolling Review with search and sorting, wildcard search, Locations with search, sort and on/off switches, New Folder in every folder picker, Buy More over the Wallet, Field Mapping tabs, Media Cache improvements, and centered dialogs.</summary>
+</entry>
 <entry>
 <title>An equalizer for the backing track</title>
 <link href="https://jukeboxoke.com/news.html#r20261028"/>
