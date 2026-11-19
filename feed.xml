@@ -3,83 +3,83 @@
 <title>Jukoke news</title>
 <subtitle>Release notes and announcements</subtitle>
 <author><name>Jukoke</name></author>
-<link rel="alternate" type="text/html" href="https://jukeboxoke.com/news.html"/>
-<link rel="self" type="application/atom+xml" href="https://jukeboxoke.com/feed.xml"/>
+<link rel="alternate" type="text/html" href="https://jukoke.com/news.html"/>
+<link rel="self" type="application/atom+xml" href="https://jukoke.com/feed.xml"/>
 <id>https://jukeboxoke.com/</id>
 <updated>2026-11-08T12:00:00Z</updated>
 <entry>
 <title>Tidier folders and a calmer Wallet</title>
-<link href="https://jukeboxoke.com/news.html#r20261108"/>
+<link href="https://jukoke.com/news.html#r20261108"/>
 <id>https://jukeboxoke.com/news.html#r20261108</id>
 <updated>2026-11-08T12:00:00Z</updated>
 <summary>Version 2026.11.08-001: a scrolling Review with search and sorting, wildcard search, Locations with search, sort and on/off switches, New Folder in every folder picker, Buy More over the Wallet, Field Mapping tabs, Media Cache improvements, and centered dialogs.</summary>
 </entry>
 <entry>
 <title>An equalizer for the backing track</title>
-<link href="https://jukeboxoke.com/news.html#r20261028"/>
+<link href="https://jukoke.com/news.html#r20261028"/>
 <id>https://jukeboxoke.com/news.html#r20261028</id>
 <updated>2026-10-28T12:00:00Z</updated>
 <summary>Version 2026.10.28-001: an equalizer for Lite and Pro with presets, a Default and a curve for each song; previews kept between sessions with a size limit; finer volume steps; and a rebuild for video files that will not open.</summary>
 </entry>
 <entry>
 <title>Test your screen, sound and songs before the party</title>
-<link href="https://jukeboxoke.com/news.html#r20261025"/>
+<link href="https://jukoke.com/news.html#r20261025"/>
 <id>https://jukeboxoke.com/news.html#r20261025</id>
 <updated>2026-10-25T12:00:00Z</updated>
 <summary>Version 2026.10.25-001: Test songs and a Screen &amp; sound test in Get Ready, a Get Ready button that shows green, yellow or red and keeps itself up to date, and folder scans that share the Import review.</summary>
 </entry>
 <entry>
 <title>Simpler plans and a 30-Day Pro Pass</title>
-<link href="https://jukeboxoke.com/news.html#r20261023"/>
+<link href="https://jukoke.com/news.html#r20261023"/>
 <id>https://jukeboxoke.com/news.html#r20261023</id>
 <updated>2026-10-23T12:00:00Z</updated>
 <summary>Version 2026.10.23-001: three plans (Free, Lite, Pro), tokens at $1, a $35 30-Day Pro Pass, and a 30-day free trial.</summary>
 </entry>
 <entry>
 <title>A tidier dashboard, a guest panel, and your trial dates</title>
-<link href="https://jukeboxoke.com/news.html#r20261017"/>
+<link href="https://jukoke.com/news.html#r20261017"/>
 <id>https://jukeboxoke.com/news.html#r20261017</id>
 <updated>2026-10-17T12:00:00Z</updated>
 <summary>Version 2026.10.17-002: a tidier host dashboard, a per-guest panel, trial start and end dates in the Wallet, and a Copy button for your Install ID.</summary>
 </entry>
 <entry>
 <title>A tip jar on every guest&#8217;s phone</title>
-<link href="https://jukeboxoke.com/news.html#r20261014b"/>
+<link href="https://jukoke.com/news.html#r20261014b"/>
 <id>https://jukeboxoke.com/news.html#r20261014b</id>
 <updated>2026-10-14T12:00:00Z</updated>
 <summary>Pro hosts can show their own tip link, QR picture or text to copy (such as a Zelle email) on guests&#8217; phones. Tips go straight to the host, with no fee from Jukoke.</summary>
 </entry>
 <entry>
 <title>Approve some songs first</title>
-<link href="https://jukeboxoke.com/news.html#r20261014"/>
+<link href="https://jukoke.com/news.html#r20261014"/>
 <id>https://jukeboxoke.com/news.html#r20261014</id>
 <updated>2026-10-14T00:00:00Z</updated>
 <summary>Pro hosts can hold songs that are too long, too short or repeated until they approve them, with song lengths shown in the queue and search.</summary>
 </entry>
 <entry>
 <title>Get Ready: a guided start, and easier-to-read help text</title>
-<link href="https://jukeboxoke.com/news.html#r20261010"/>
+<link href="https://jukoke.com/news.html#r20261010"/>
 <id>https://jukeboxoke.com/news.html#r20261010</id>
 <updated>2026-10-10T00:00:00Z</updated>
 <summary>NICE-Start, a guided checklist that gets you from install to your first song, plus clearer offline-drive errors and easier-to-read help text.</summary>
 </entry>
 <entry>
 <title>Announce, a managed Ask the MC list, and a clearer end of session</title>
-<link href="https://jukeboxoke.com/news.html#r20261009"/>
+<link href="https://jukoke.com/news.html#r20261009"/>
 <id>https://jukeboxoke.com/news.html#r20261009</id>
 <updated>2026-10-09T00:00:00Z</updated>
 <summary>Announce messages to every guest (Pro), a searchable Ask the MC list, a clearer end of session, and a plainer description of the stage name and PIN.</summary>
 </entry>
 <entry>
 <title>Easier to join, easier to ask: release 2026.10.08-001</title>
-<link href="https://jukeboxoke.com/news.html#r20261008"/>
+<link href="https://jukoke.com/news.html#r20261008"/>
 <id>https://jukeboxoke.com/news.html#r20261008</id>
 <updated>2026-10-08T00:00:00Z</updated>
 <summary>Two-step Wi-Fi and Jukoke join codes on every plan, plus Ask the MC private guest messages on Lite and Pro.</summary>
 </entry>
 <entry>
 <title>Welcome to the Jukoke website</title>
-<link href="https://jukeboxoke.com/news.html#welcome"/>
+<link href="https://jukoke.com/news.html#welcome"/>
 <id>https://jukeboxoke.com/news.html#welcome</id>
 <updated>2026-10-03T00:00:00Z</updated>
 <summary>This is the new home for Jukoke: downloads, release notes and support all live here.</summary>

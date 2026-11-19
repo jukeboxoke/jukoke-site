@@ -33,7 +33,7 @@
       var subject = "Jukoke feedback: " + topic;
       var body = msg + "\n\nFrom: " + email + "\nPage: " + location.href;
       if (!/^[0-9a-f-]{20,}$/i.test(C.formKey || "")) {
-        location.href = "mailto:support@jukeboxoke.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        location.href = "mailto:support@jukoke.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
         say("Opening your email app\u2026");
         return;
       }
@@ -46,7 +46,7 @@
         if (j && j.success) { form.reset(); say("Thank you. Your message was sent.", "fb-ok"); }
         else { throw new Error("rejected"); }
       }).catch(function () {
-        say("Couldn\u2019t send. Please email support@jukeboxoke.com instead.", "fb-err");
+        say("Couldn\u2019t send. Please email support@jukoke.com instead.", "fb-err");
       }).then(function () { btn.disabled = false; });
     });
   }
