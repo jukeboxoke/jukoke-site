@@ -159,6 +159,11 @@ details p{margin-bottom:14px}
 .shots.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:700px){.shots.two{grid-template-columns:1fr}}
 
+/* Demo videos */
+.demo-video{margin:22px 0 8px}
+.demo-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.demo-video figcaption{margin-top:8px;font-size:.9rem;color:var(--muted)}
+
 /* Phones: keep the five nav links on one row under the logo. */
 @media (max-width:640px){
 nav{flex-wrap:nowrap;width:100%;justify-content:space-between;overflow-x:auto;scrollbar-width:none}
