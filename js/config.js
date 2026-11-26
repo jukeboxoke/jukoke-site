@@ -8,12 +8,12 @@ window.JUKOKE = {
   winAsset: "Jukoke-Setup.exe",             // file name attached to every release (keep it identical)
   debAsset: "Jukoke-Ubuntu.deb",            // ditto
   pricesUpdated: "October 2026",            // shown on the Pricing page
-  version: "2026.11.25-102",
+  version: "2026.11.26-101",
   released: "November 2026",
   winSize: "213 MB",
   debSize: "66 MB",
-  winSha: "e45a4c9beef0af22362edae501c004b47fd7e2c45e55060bcfc539c642efe21d",
-  debSha: "5b9a57dc6025c9d85217ea42082b7970a2cd17a0f373d70f3f3eae29440f77e3",
+  winSha: "f5e5f6e47214de051416f68e85b7ca9bef29a3e9f3272763429f3d15eb3ca759",
+  debSha: "aa5117a3203d8bb0524b4f9e70dea30dedb8c9c6403ad083185d9482d1914706",
   analyticsId: "dc5cd492-6689-41ce-915e-98ce07a0e882",
   formKey: "0cbaf8a3-ad92-42a1-912c-33efb8d0aaf3"   // Web3Forms access key (public by design); mail goes to the address the key was created for
 };
