@@ -12,8 +12,8 @@ window.JUKOKE = {
   released: "November 2026",
   winSize: "213 MB",
   debSize: "66 MB",
-  winSha: "f5e5f6e47214de051416f68e85b7ca9bef29a3e9f3272763429f3d15eb3ca759",
-  debSha: "aa5117a3203d8bb0524b4f9e70dea30dedb8c9c6403ad083185d9482d1914706",
+  winSha: "30f7b2f06870e2ef17edd41d13713dd7828b54b61a9e700cdc24424d4211d5f7",
+  debSha: "3882191152880a24e46c2a917ca178ab285c02cde60fa4824a1a1747acc4e20f",
   analyticsId: "dc5cd492-6689-41ce-915e-98ce07a0e882",
   formKey: "0cbaf8a3-ad92-42a1-912c-33efb8d0aaf3"   // Web3Forms access key (public by design); mail goes to the address the key was created for
 };
